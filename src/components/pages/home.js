@@ -1,4 +1,5 @@
 import React from "react";
+import List from "../employeeList";
 
 function Home() {
     return (
@@ -12,6 +13,8 @@ function Home() {
                 <a className="btn btn-primary btn-lg" href="/new" role="button">New Employee</a> 
             </div>
             </div>
+            <br />
+            <List />
         </div>
     )
 }

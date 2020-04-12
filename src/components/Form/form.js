@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+const employees = []
+
+
 class Form extends Component {
 
     state = {
@@ -30,12 +33,17 @@ class Form extends Component {
             alert(`${this.state.firstName} ${this.state.lastName} has been entered into the employee directory`)
         }
 
+        employees.push(this.state)
+
         this.setState({
             firstName: "",
             lastName: "",
             role: "",
             department: ""
         });
+
+        console.log(employees);
+        
     };
 
     render() {
